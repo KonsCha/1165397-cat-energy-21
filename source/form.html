@@ -15,7 +15,7 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="button-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
@@ -45,19 +45,25 @@
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
         <p class="form__description">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
-        <div class="form__main-form main-form">
-          <p class="main-form__name">
-            <label for="main-form__name">ИМЯ:*</label>
-            <input id="main-form__name" type="text" name="main-form__name" value="барсик">
-          </p>
-          <p class="main-form__weight">
-            <label for="main-form__weight">Вес (кг):*</label>
-            <input id="main-form__weight" type="text" name="main-form__weight" value="7">
-          </p>
-          <p class="main-form__age">
-            <label for="main-form__age">Возраст (лет):</label>
-            <input id="main-form__age" type="text" name="main-form__age" value="7">
-          </p>
+        <div class="form__main-form">
+          <label class="field-text">
+            <span class="field-text__name">ИМЯ:*</span>
+            <span class="field-text__input-wrap">
+               <input class="field-text__input" type="text" value="барсик" required="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__name">Вес (кг):*</span>
+            <span class="field-text__input-wrap">
+               <input class="field-text__input" type="text" value="7" required="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__name">Возраст (лет):</span>
+            <span class="field-text__input-wrap">
+               <input class="field-text__input" type="text" value="7">
+            </span>
+          </label>
         </div>
         <div class="form__radio radio">
           <ul class="radio__list">
@@ -75,20 +81,27 @@
                 Не знаю (Нужен ваш совет)</label></li>
         </div>
         <h3 class="form__title">Контактные данные (владельца кота)</h3>
-        <div class="form__contacts-form contacts-form">
-          <p class="contacts-form__mail">
-            <label for="contacts-form__mail">E-mail:*</label>
-            <input id="contacts-form__mail" type="text" name="contacts-form__mail" value="кuklachev@gmail.com">
-          </p>
-          <p class="contacts-form__weight">
-            <label for="contacts-form__weight">Телефон:*</label>
-            <input id="contacts-form__weight" type="text" name="contacts-form__weight" value="8 (960) 900-60-90">
-          </p>
+        <div class="form__contacts-form">
+          <label class="field-text">
+            <span class="field-text__name">E-mail:*</span>
+            <span class="field-text__input-wrap">
+               <input class="field-text__input" type="text" value="кuklachev@gmail.com" required="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__name">Телефон:*</span>
+            <span class="field-text__input-wrap">
+               <input class="field-text__input" type="text" value="8 (960) 900-60-90" required="">
+            </span>
+          </label>
         </div>
         <h3 class="form__title">Комментарий</h3>
-        <p class="form__comments">
-          <input type="text" name="comment-text" value="Расскажите обо всех повадках кота">
-        </p>
+        <label class="field-text">
+          <span class="field-text__name"></span>
+          <span class="field-text__input-wrap">
+             <input class="field-text__input" type="text" value="Расскажите обо всех повадках кота">
+          </span>
+        </label>
         <h3 class="form__title">Дополнительно</h3>
         <div class="form__checkbox checkbox">
           <ul class="checkbox__list">
