@@ -21,17 +21,17 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>
+            <a class="main-nav__link" href="#">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="form.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html main-nav__item--active">
               Подбор программы
             </a>
           </li>
@@ -42,8 +42,8 @@
   <main class="page-main">
     <div class="page-main__wrapper container">
       <h1 class="visually-hidden">Форма "Cat Energy" </h1>
-      <h2 class="page-main__title">Подбор программы</h2>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="form__title-main">Подбор программы</h2>
         <p class="form__description">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
         <div class="form__main-form">
@@ -97,12 +97,7 @@
           </label>
         </div>
         <h3 class="form__title">Комментарий</h3>
-        <label class="field-text">
-          <span class="field-text__name"></span>
-          <span class="field-text__input-wrap">
-            <input class="field-text__input" type="text" value="Расскажите обо всех повадках кота">
-          </span>
-        </label>
+        <textarea class="textarea" rows="7">Расскажите обо всех повадках кота</textarea>
         <h3 class="form__title">Дополнительно</h3>
         <div class="form__checkbox checkbox">
           <ul class="checkbox__list">
