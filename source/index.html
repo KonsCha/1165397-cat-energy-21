@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт Энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -18,17 +20,17 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a>
+              <a class="main-nav__link" href="#">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -39,15 +41,17 @@
     <main class="page-main">
       <h1 class="visually-hidden">Сайт "Cat Energy" </h1>
       <section class="intro">
-        <h2 class="visually-hidden">Интро Кэт Энерджи</h2>
-        <h2 class="intro__title">Функциональное<br>
-        питание для котов</h1>
-        <p class="intro__slogan">Занялся собой? Займись котом!</p>
-        <a class="intro__link">подобрать программу</a>
-        <div class="intro__block block-cat">
-        </div>
-        <div class="intro__block block-can">
-          <img class="intro__block-image image-can" src="img/" width="" height="" alt="">
+        <div class="intro__wrapper container">
+          <h2 class="visually-hidden">Интро Кэт Энерджи</h2>
+          <h2 class="intro__title">Функциональное<br>
+          питание для котов</h1>
+          <p class="intro__slogan">Занялся собой? Займись котом!</p>
+          <a class="intro__link">подобрать программу</a>
+          <div class="intro__block block-cat">
+          </div>
+          <div class="intro__block block-can">
+            <img class="intro__block-image image-can" src="img/" width="" height="" alt="">
+          </div>
         </div>
       </section>
       <section class="programms">
@@ -76,27 +80,23 @@
           <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <svg class="advantages__item-icon"></svg>
-              <p class="advantages__description">Функциональное питание
-                содержит только полезные
+              <p class="advantages__description">Функциональное питание<br>
+                содержит только полезные<br>
                 питательные вещества.</p>
             </li>
             <li class="advantages__item">
-              <svg class="advantages__item-icon"></svg>
-              <p class="advantages__description">Выпускается в виде порошка,
-                который нужно лишь залить
+              <p class="advantages__description">Выпускается в виде порошка,<br>
+                который нужно лишь залить<br>
                 кипятком и готово.</p>
             </li>
             <li class="advantages__item">
-              <svg class="advantages__item-icon"></svg>
-              <p class="advantages__description">Замените один-два приема
-                обычной еды на наше
+              <p class="advantages__description">Замените один-два приема<br>
+                обычной еды на наше<br>
                 функциональное питание.</p>
             </li>
             <li class="advantages__item">
-              <svg class="advantages__item-icon"></svg>
-              <p class="advantages__description">Уже через месяц наслаждайтесь
-                изменениями к лучшему
+              <p class="advantages__description">Уже через месяц <br>наслаждайтесь
+                изменениями <br> к лучшему
                 вашего питомца!</p>
             </li>
           </ul>
@@ -112,19 +112,17 @@
               без изнуряющих тренировок! При этом он не менял своих
               привычек и по-прежнему спит по 16 часов в день. </p>
               <div class="example__information information">
-                <ul class="information__list">
-                  <li class="information__item">
-                    <p>5 кг</p>
-                    <p>снижение веса</p>
-                  </li>
-                  <li class="information__item">
-                    <p>60 ДНЕЙ</p>
-                    <p>затрачено времени</p>
-                  </li>
-                </ul>
+                <div class="information__weight">
+                  <p class="information__description">5 кг</p>
+                  <p class="information__description-extra">снижение веса</p>
+                </div>
+                <div class="information__time">
+                  <p class="information__description">60 ДНЕЙ</p>
+                  <p class="information__description-extra">затрачено времени</p>
+                </div>
               </div>
-              <div class="example__cost cost">
-                <p class="cost__description">Затраты на питание: 15 000 РУБ. </p>
+              <div class="example__cost example-cost">
+                <p class="example-cost__description">Затраты на питание: 15 000 РУБ. </p>
               </div>
           </div>
           <div class="example__range"></div>
@@ -145,25 +143,25 @@
           <a class="logo__link logo-name">
             <img src="img/" width="" height="" alt="">
           </a>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">HTML Academy</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="img/" width="" height="" alt="">
-            </a>
-          </div>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/" width="" height="" alt="">
+          </a>
         </div>
       </div>
     </footer>
