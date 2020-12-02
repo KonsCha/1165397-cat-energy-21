@@ -2,3 +2,21 @@
   font-size: 14px;
   line-height: 20px;
 }
+@media (min-width: @mobile-width) {
+  .example-cost__description {
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example-cost__description {
+    font-size: 20px;
+    float: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-cost__description {
+    float: left;
+  }
+}
