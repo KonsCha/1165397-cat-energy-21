@@ -1,11 +1,13 @@
 .programms-article {
   background-color: @basic_grey;
+  margin-bottom: 20px;
 }
 .programms-article__title {
   font-weight: 400;
   font-size: 24px ;
   line-height: 37px;
   text-transform: uppercase;
+
 }
 .programms-article__description {
   font-family: @font2;
@@ -17,4 +19,40 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: @mobile-width) {
+  .programms-article {
+    width: 280px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .programms-article__title {
+    font-size: 36px ;
+    line-height: 36px;
+  }
+  .programms-article__description {
+    font-family: @font2;
+    font-size: 16px;
+    line-height: 24px;
+    color: @black;
+  }
+  .programms-article__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .programms-article {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programms__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .programms-article {
+    width: 570px;
+  }
 }

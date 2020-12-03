@@ -4,3 +4,37 @@
   line-height: 18px;
   color: @special_dark-grey;
 }
+
+@media (min-width: @mobile-width) {
+  .example__story {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .story__description {
+    width: 279px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .story__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .story {
+    display: block;
+  }
+  .story__description {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__story {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .story__description {
+    width: 436px;
+  }
+}

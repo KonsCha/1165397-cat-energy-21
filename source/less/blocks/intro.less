@@ -1,6 +1,7 @@
 .intro {
   background-color:rgba(104, 183, 56, 0.85);
   color: @white;
+  height: 300px;
 }
 .intro__title {
   font-weight: 400;
@@ -16,4 +17,58 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 4px 44px;
+  background-color: @basic_green;
+}
+
+@media (min-width: @mobile-width) {
+  .intro__wrapper {
+    background-image: url(/img/index-background-mobile.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    background-color: @white;
+    color: @black;
+  }
+  .intro__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .intro__link {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    background-color: @white;
+    color: @black;
+  }
+  .intro__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .intro__link {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }

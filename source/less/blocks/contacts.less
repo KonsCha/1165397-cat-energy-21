@@ -8,3 +8,30 @@
   line-height: 20px;
   color: @special_dark-grey;
 }
+
+@media (min-width: @mobile-width) {
+  .contacts {
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__appeal {
+    font-size: 20px;
+    line-height: 21px;
+    width: 171px;
+  }
+  .contacts__text {
+    font-size: 16px;
+    width: 159px;
+  }
+  .contacts {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    justify-content: left;
+  }
+}
