@@ -1,7 +1,31 @@
 .field-checkbox {
-  line-height: 18px;
   text-transform: uppercase;
 }
+
 .field-checkbox__item {
+  line-height: 18px;
   list-style-type: none;
+}
+
+.field-checkbox__list {
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .field-checkbox__item {
+    font-size: 20px;
+    line-height: 30px;
+    width: 40%;
+  }
+  .field-checkbox__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field-checkbox__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }

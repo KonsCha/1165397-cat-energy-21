@@ -13,7 +13,7 @@
     <div class="page-header__wrapper container">
       <div class="page-header__block">
         <a class="page-header__logo logo-cat">
-          <img src="img/" width="" height="" alt="">
+          <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
         </a>
       </div>
       <nav class="main-nav">
@@ -22,7 +22,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
@@ -31,8 +31,8 @@
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html main-nav__item--active">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -47,40 +47,42 @@
         <h2 class="form__title-main">Подбор программы</h2>
         <p class="form__description">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
-        <div class="form__main-form">
-          <label class="field-text">
-            <span class="field-text__name">ИМЯ:*</span>
-            <span class="field-text__input-wrap">
-              <input class="field-text__input" type="text" value="барсик" required="">
-            </span>
-          </label>
-          <label class="field-text">
-            <span class="field-text__name">Вес (кг):*</span>
-            <span class="field-text__input-wrap">
-              <input class="field-text__input" type="text" value="7" required="">
-            </span>
-          </label>
-          <label class="field-text">
-            <span class="field-text__name">Возраст (лет):</span>
-            <span class="field-text__input-wrap">
-              <input class="field-text__input" type="text" value="7">
-            </span>
-          </label>
-        </div>
-        <div class="form__radio radio">
-          <ul class="radio__list">
-            <li class="radio__item"><label class="check option">
-                <input class="check__input" type="radio" name="answer" value="losing-weight" checked>
-                <span class="radio__box"></span>
-                похудение</label></li>
-            <li class="radio__item"><label class="check option">
-                <input class="check__input" type="radio" name="answer" value="gain-weight">
-                <span class="radio__box"></span>
-                Набор массы</label></li>
-            <li class="radio__item"><label class="check option">
-                <input class="check__input" type="radio" name="answer" value="need-advice">
-                <span class="radio__box"></span>
-                Не знаю (Нужен ваш совет)</label></li>
+        <div class="form__wrapper">
+          <div class="form__main-form">
+            <label class="field-text">
+              <span class="field-text__name">ИМЯ:*</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" value="барсик" required="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Вес (кг):*</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" value="7" required="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Возраст (лет):</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" value="7">
+              </span>
+            </label>
+          </div>
+          <div class="form__radio radio">
+            <ul class="radio__list">
+              <li class="radio__item"><label class="check option">
+                  <input class="check__input" type="radio" name="answer" value="losing-weight" checked>
+                  <span class="radio__box"></span>
+                  похудение</label></li>
+              <li class="radio__item"><label class="check option">
+                  <input class="check__input" type="radio" name="answer" value="gain-weight">
+                  <span class="radio__box"></span>
+                  Набор массы</label></li>
+              <li class="radio__item"><label class="check option">
+                  <input class="check__input" type="radio" name="answer" value="need-advice">
+                  <span class="radio__box"></span>
+                  Не знаю (Нужен ваш совет)</label></li>
+          </div>
         </div>
         <h3 class="form__title">Контактные данные (владельца кота)</h3>
         <div class="form__contacts-form">
@@ -126,7 +128,7 @@
   <footer class="page-footer">
     <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2334.354390978542!2d37.59931151576434!3d54.19150888016482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41344079a425caf7%3A0x39c7983d3425c2ad!2sUlitsa%20Leyteyzena%2C%2018%2C%20Tula%2C%20Tulskaya%20oblast&#39;%2C%20300035!5e0!3m2!1sen!2sru!4v1603009249058!5m2!1sen!2sru"
-    height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    height="362" width=100% style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="page-footer__wrapper container">
       <div class="page-footer__contacts contacts">
         <p class="contacts__appeal">приглашаем
@@ -135,29 +137,31 @@
           Конюшенная, д. 19/8
           Санкт-Петербург</p>
       </div>
-      <div class="page-footer__logo logo">
-        <a class="logo__link logo-name">
-          <img src="img/" width="" height="" alt="">
-        </a>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/" width="" height="" alt="">
-        </a>
+      <div class="page-footer__wrapper-extra">
+        <div class="page-footer__logo logo">
+          <a class="logo__link logo-name">
+            <img src="img/footer-logo.svg" width="" height="" alt="">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/" width="" height="" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
