@@ -1,23 +1,28 @@
 .information__item {
-  list-style-type: none ;
+  list-style-type: none;
 }
- .information__description-extra {
+
+.information__description-extra {
   font-size: 12px;
   line-height: 12px;
   color: @special_dark-grey;
- }
+}
+
 .information__description {
   font-size: 24px;
   line-height: 24px;
 }
+
 @media (min-width: @mobile-width) {
   .information {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .information__weight {
     width: 124px;
   }
+
   .information__time {
     width: 124px;
   }
@@ -28,11 +33,12 @@
     font-size: 30px;
     line-height: 37px;
   }
+
   .information__description-extra {
     font-size: 14px;
     line-height: 14px;
-   }
-   .information {
+  }
+  .information {
     display: flex;
     justify-content: left;
   }

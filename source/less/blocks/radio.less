@@ -1,8 +1,20 @@
 .radio {
-  line-height: 18px;
   text-transform: uppercase;
   color: @special_dark-grey-2;
 }
+
 .radio__item {
+  line-height: 18px;
   list-style-type: none;
+}
+
+.radio__list {
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .radio__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -3,24 +3,80 @@
   font-size: 36px;
   line-height: 36px;
 }
+
 .form__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
 }
+
 .form__description {
   font-size: 14px;
   line-height: 18px;
 }
-.form__sure-fields {
-  font-size: 14px;
-  line-height: 16px;
-}
+
 .form__main-form {
   display: flex;
   flex-direction: column;
 }
+
 .form__contacts-form {
   display: flex;
   flex-direction: column;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 7px 44px;
+  background-color: @basic_green;
+  color: @white;
+  font-family: @font1;
+  width: 100%;
+}
+
+.form__sure-fields {
+  font-family: @font2;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__title-main {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__button {
+    font-size: 20px;
+    width: 282px;
+    margin-bottom: 72px;
+    margin-right: 61px;
+  }
+
+  .form__sure-fields {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form__contacts-form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
