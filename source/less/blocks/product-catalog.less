@@ -4,7 +4,36 @@
   line-height: 36px;
 }
 
+.product-catalog__list {
+  padding: 0;
+}
+
 .product-catalog__item {
   list-style-type: none;
   margin-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+
+  .product-catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .product-catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .product-catalog__item {
+    width: 40%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .product-catalog__item {
+    width: 21%;
+  }
 }

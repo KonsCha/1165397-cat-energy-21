@@ -13,7 +13,7 @@
     <div class="page-header__wrapper container">
       <div class="page-header__block">
         <a class="page-header__logo logo-cat">
-          <img src="img/" width="" height="" alt="">
+          <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
         </a>
       </div>
       <nav class="main-nav">
@@ -22,7 +22,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
@@ -256,7 +256,7 @@
                   <img src="" alt="">
                 </picture>
               </a>
-              <section class="product__description">
+              <section class="product__description product__description--background-white">
                 <a class="product__link" href="#">
                   <h3 class="product__title">Показать еще
                     100500 товаров</h3>
@@ -264,53 +264,79 @@
                 <p class="product__text">На самом деле вкусов
                   гораздо больше!</p>
               </section>
-              <a class="btn" href="#">показать все</a>
+              <a class="btn btn-show-all" href="#">показать все</a>
             </div>
           </li>
         </ul>
       </section>
       <section class="extra-goods">
         <h3 class="extra-goods__title">Дополнительные товары</h3>
-        <ul class="extra-goods__list">
-          <li class="extra-goods__item">
-            <div class="extra-good">
-              <h4 class="extra-good__title">Сахарозаменитель</h4>
-              <p class="extra-good__pack">1 упаковка (100 г)</p>
-              <p class="extra-good__price">200 Р</p>
-              <a class="btn" href="#">Заказать</a>
-            </div>
-          </li>
-          <li class="extra-goods__item">
-            <div class="extra-good">
-              <h4 class="extra-good__title">Питьевая вода</h4>
-              <p class="extra-good__pack">5 литров</p>
-              <p class="extra-good__price">50 Р</p>
-              <a class="btn" href="#">Заказать</a>
-            </div>
-          </li>
-          <li class="extra-goods__item">
-            <div class="extra-good">
-              <h4 class="extra-good__title">молоко</h4>
-              <p class="extra-good__pack">1 литр</p>
-              <p class="extra-good__price">100 Р</p>
-              <a class="btn" href="#">Заказать</a>
-            </div>
-          </li>
-          <li class="extra-goods__item">
-            <div class="extra-good">
-              <h4 class="extra-good__title">витамины</h4>
-              <p class="extra-good__pack">1 упаковка (30 г)</p>
-              <p class="extra-good__price">300 Р</p>
-              <a class="btn" href="#">Заказать</a>
-            </div>
-          </li>
-        </ul>
-        <div class="extra-goods__promo promo">
-          <a class="promo__link">
-            <p class="promo_description">Закажите все
-              и получите чехол для
-              кота в подарок!</p>
-          </a>
+        <div class="extra-goods__wrapper">
+          <ul class="extra-goods__list">
+            <li class="extra-goods__item">
+              <div class="extra-good">
+                <div class="extra-good__wrapper">
+                  <div>
+                    <h4 class="extra-good__title">Сахарозаменитель</h4>
+                  </div>
+                  <div class="extra-good__wrapper-extra">
+                    <p class="extra-good__pack">1 упаковка (100 г)</p>
+                    <p class="extra-good__price">200 Р</p>
+                  </div>
+                </div>
+                <a class="btn btn-extra-good" href="#">Заказать</a>
+              </div>
+            </li>
+            <li class="extra-goods__item">
+              <div class="extra-good">
+                <div class="extra-good__wrapper">
+                  <div>
+                    <h4 class="extra-good__title">Питьевая вода</h4>
+                  </div>
+                  <div class="extra-good__wrapper-extra">
+                    <p class="extra-good__pack">5 литров</p>
+                    <p class="extra-good__price">50 Р</p>
+                  </div>
+                </div>
+                <a class="btn btn-extra-good" href="#">Заказать</a>
+              </div>
+            </li>
+            <li class="extra-goods__item">
+              <div class="extra-good">
+                <div class="extra-good__wrapper">
+                  <div>
+                    <h4 class="extra-good__title">молоко</h4>
+                  </div>
+                  <div class="extra-good__wrapper-extra">
+                    <p class="extra-good__pack">1 литр</p>
+                    <p class="extra-good__price">100 Р</p>
+                  </div>
+                </div>
+                <a class="btn btn-extra-good" href="#">Заказать</a>
+              </div>
+            </li>
+            <li class="extra-goods__item">
+              <div class="extra-good">
+                <div class="extra-good__wrapper">
+                  <div>
+                    <h4 class="extra-good__title">витамины</h4>
+                  </div>
+                  <div class="extra-good__wrapper-extra">
+                    <p class="extra-good__pack">1 упаковка (30 г)</p>
+                    <p class="extra-good__price">300 Р</p>
+                  </div>
+                </div>
+                <a class="btn btn-extra-good" href="#">Заказать</a>
+              </div>
+            </li>
+          </ul>
+          <div class="extra-goods__promo promo">
+            <a class="promo__link">
+              <p class="promo__description">Закажите все
+                и получите чехол для
+                кота в подарок!</p>
+            </a>
+          </div>
         </div>
       </section>
     </div>
@@ -318,7 +344,7 @@
   <footer class="page-footer">
     <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2334.354390978542!2d37.59931151576434!3d54.19150888016482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41344079a425caf7%3A0x39c7983d3425c2ad!2sUlitsa%20Leyteyzena%2C%2018%2C%20Tula%2C%20Tulskaya%20oblast&#39;%2C%20300035!5e0!3m2!1sen!2sru!4v1603009249058!5m2!1sen!2sru"
-    height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    height="362" width=100% style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="page-footer__wrapper container">
       <div class="page-footer__contacts contacts">
         <p class="contacts__appeal">приглашаем
