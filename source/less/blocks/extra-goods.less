@@ -4,20 +4,31 @@
   line-height: 24px;
 }
 
+.extra-goods__list {
+  padding: 0;
+}
+
 .extra-goods__item {
   list-style-type: none;
 }
 
-.extra-good__title {
-  font-weight: 400;
-  line-height: 16px;
-  color: @special_dark-grey-2;
+@media (min-width: @tablet-width) {
+
+  .extra-goods__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.extra-good__pack,
-.extra-good__price {
-  font-family: @font2;
-  font-size: 14px;
-  line-height: 14px;
-  color: @special_dark-grey;
+@media (min-width: @desktop-width) {
+
+  .extra-goods__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .extra-goods__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
