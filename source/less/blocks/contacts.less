@@ -2,19 +2,22 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 }
 
 .contacts__text {
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
+  margin: 0;
 }
 
-@media (min-width: @mobile-width) {
-  .contacts {
-    display: flex;
-  }
+.contacts {
+  display: flex;
+  position: absolute;
+  top: -86px;
 }
+
 
 @media (min-width: @tablet-width) {
   .contacts__appeal {
