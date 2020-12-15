@@ -1,20 +1,82 @@
 .radio {
   text-transform: uppercase;
   color: @special_dark-grey-2;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .radio__item {
   line-height: 18px;
   list-style-type: none;
+  padding-left: 45px;
+  padding-bottom: 25px;
 }
 
 .radio__list {
   padding: 0;
+  margin: 0;
+  padding-top: 28px;
+}
+
+.option {
+  display: block;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__box {
+  position: absolute;
+  margin-left: -45px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/radiobutton-mobile.svg);
+}
+
+.check__input:checked+.radio__box {
+  background-image: url(../img/radiobutton-active-mobile.svg);
 }
 
 @media (min-width: @tablet-width) {
   .radio__item {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 88px;
+    padding-bottom: 23px;
   }
+
+  .radio__list {
+    padding-top: 25px;
+    padding-bottom: 7px;
+  }
+
+  .radio__box {
+    margin-left: -63px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/radiobutton-tablet.svg);
+  }
+
+  .check__input:checked+.radio__box {
+    background-image: url(../img/radiobutton-active-tablet.svg);
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .radio {
+    border-top: none;
+    border-bottom: none;
+    border: 1px solid #e7e7e7;
+  }
+
+  .radio__list {
+    padding-top: 30px;
+    padding-bottom: 7px;
+  }
+
 }

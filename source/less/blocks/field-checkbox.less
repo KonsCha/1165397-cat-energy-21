@@ -5,10 +5,36 @@
 .field-checkbox__item {
   line-height: 18px;
   list-style-type: none;
+  padding-bottom: 25px;
+  padding-left: 46px;
 }
 
 .field-checkbox__list {
   padding: 0;
+  padding-top: 25px;
+}
+
+.field-checkbox-option {
+  display: block;
+}
+
+.field-checkbox__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.field-checkbox__box {
+  position: absolute;
+  margin-left: -45px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/checkbox-mobile.svg);
+}
+
+.field-checkbox__input:checked+.field-checkbox__box {
+  background-image: url(../img/checkbox-active-mobile.svg);
 }
 
 @media (min-width: @tablet-width) {
@@ -20,6 +46,18 @@
   .field-checkbox__list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .field-checkbox__box {
+    position: absolute;
+    margin-left: -45px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/checkbox-tablet.svg);
+  }
+
+  .field-checkbox__input:checked+.field-checkbox__box {
+    background-image: url(../img/checkbox-active-tablet.svg);
   }
 }
 

@@ -1,3 +1,8 @@
+.field-text {
+  margin-bottom: 14px;
+  display: flex;
+}
+
 .field-text__name {
   line-height: 18px;
   color: @special_dark-grey;
@@ -8,9 +13,20 @@
   text-transform: uppercase;
   line-height: 18px;
   color: @special_dark-grey;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border: 1px solid #e7e7e7;
+  margin-left: 11px;
 }
 
 @media (min-width: @tablet-width) {
+
+  .field-text {
+    margin-bottom: 20px;
+  }
+
   .field-text__name {
     font-size: 20px;
     line-height: 30px;
@@ -19,4 +35,8 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  
 }

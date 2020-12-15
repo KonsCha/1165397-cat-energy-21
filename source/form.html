@@ -13,13 +13,17 @@
     <div class="page-header__wrapper container">
       <div class="page-header__block">
         <a class="page-header__logo logo-cat">
-          <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
+          </picture>
         </a>
       </div>
-      <nav class="main-nav">
-        <button class="button-toggle" type="button">
+      <nav class="main-nav main-nav--closed">
+        <a class="button-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-        </button>
+        </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">
@@ -122,44 +126,49 @@
                 витамины</label></li>
           </ul>
         </div>
-        <button class="form__button" type="submit">отправить заявку</button>
-        <small class="form__sure-fields">* — Обязательные поля</small>
+        <div class="form__wrapper-extra-one">
+          <div><button class="form__button" type="submit">отправить заявку</button></div>
+          <div><p class="form__sure-fields">* — Обязательные поля</p></div>
+        </div>
+      </form>
   </main>
   <footer class="page-footer">
-    <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2334.354390978542!2d37.59931151576434!3d54.19150888016482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41344079a425caf7%3A0x39c7983d3425c2ad!2sUlitsa%20Leyteyzena%2C%2018%2C%20Tula%2C%20Tulskaya%20oblast&#39;%2C%20300035!5e0!3m2!1sen!2sru!4v1603009249058!5m2!1sen!2sru"
-    height="362" width=100% style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="page-footer__wrapper container">
-      <div class="page-footer__contacts contacts">
+      <div class="page-footer__contacts contacts contacts--form">
         <p class="contacts__appeal">приглашаем
           к сотрудничеству дилеров!</p>
         <p class="contacts__text">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург</p>
       </div>
+    </div>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2334.354390978542!2d37.59931151576434!3d54.19150888016482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41344079a425caf7%3A0x39c7983d3425c2ad!2sUlitsa%20Leyteyzena%2C%2018%2C%20Tula%2C%20Tulskaya%20oblast&#39;%2C%20300035!5e0!3m2!1sen!2sru!4v1603009249058!5m2!1sen!2sru"
+    height="362" width=100% style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="page-footer__wrapper container">
       <div class="page-footer__wrapper-extra">
         <div class="page-footer__logo logo">
-          <a class="logo__link logo-name">
-            <img src="img/footer-logo.svg" width="" height="" alt="">
+          <a class="logo__link logo-mini">
+            <img src="img/footer-logo.svg" width="" height="" alt="Логотип мини">
           </a>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a>
+              <a class="social__link social__link--vkontakte" href="#"><img src="img/icon_vkontakte.svg" width="" height="" alt="Иконка вконтакте"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+              <a class="social__link social__link--instagram" href="#"><img src="img/icon_instagram.svg" width="" height="" alt="Иконка инстаграм"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+              <a class="social__link social__link--facebook" href="#"><img src="img/icon_facebook.svg" width="" height="" alt="Иконка фейсбук"></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">HTML Academy</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/" width="" height="" alt="">
+            <img src="img/Лого_html.svg" width="" height="" alt="Лого_html">
           </a>
         </div>
       </div>
