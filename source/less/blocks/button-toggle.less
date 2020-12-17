@@ -1,0 +1,40 @@
+.main-nav--closed .button-toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 24px;
+  height: 1.5px;
+  background-color: @black;
+  box-shadow: 0 8px 0 0 @black, 0 16px 0 0 @black;
+  cursor: pointer;
+}
+
+.main-nav--opened .button-toggle {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 25px;
+    height: 1.5px;
+    background-color: @black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav--closed .button-toggle::before,
+  .main-nav--opened .button-toggle {
+    display: none;
+  }
+}

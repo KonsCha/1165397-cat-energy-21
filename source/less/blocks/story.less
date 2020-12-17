@@ -3,17 +3,15 @@
   font-size: 14px;
   line-height: 18px;
   color: @special_dark-grey;
+  margin: 0;
+  padding-top: 33px;
+  padding-bottom: 40px;
+  width: 279px;
 }
 
-@media (min-width: @mobile-width) {
-  .example__story {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .story__description {
-    width: 279px;
-  }
+.example__story {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,20 +19,30 @@
     font-size: 16px;
     line-height: 24px;
     width: 708px;
+    padding-top: 63px;
+    padding-bottom: 69px;
   }
 
   .story {
     display: block;
+    position: relative;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example__story {
+    background-color: @basic_grey;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .story__description {
     width: 436px;
+    padding-top: 70px;
+  }
+
+  .example__title {
+    margin-bottom: 76px;
   }
 }
