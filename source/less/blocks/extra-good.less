@@ -8,6 +8,8 @@
   font-weight: 400;
   line-height: 16px;
   color: @special_dark-grey-2;
+  margin: 0;
+  padding: 13px 0;
 }
 
 .extra-good__pack,
@@ -16,6 +18,13 @@
   font-size: 14px;
   line-height: 14px;
   color: @special_dark-grey;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.extra-good {
+  border-bottom: 1px solid @special_grey;
+  padding-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -23,12 +32,16 @@
   .extra-good__title {
     font-size: 20px;
     line-height: 20px;
+    margin-left: 38px;
+    padding: 26px 0;
   }
 
   .extra-good__pack,
   .extra-good__price {
   font-size: 16px;
   line-height: 20px;
+  padding-top: 29px;
+  padding-bottom: 23px;
   }
 
   .extra-good__price {
@@ -44,14 +57,43 @@
   .extra-good__wrapper-extra{
     display: flex;
     justify-content: right;
+    margin-right: 38px;
+  }
+
+  .extra-good {
+    padding-bottom: 29px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  
   .extra-good {
     display: flex;
     justify-content: space-between;
-    width: 826px;
+    width: 896px;
+    padding-bottom: 0;
+  }
+
+  .extra-good__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 0;
+    padding: 26px 0;
+    width: 161px;
+    padding-right: 163px;
+  }
+
+  .extra-good__wrapper-extra {
+    float: right;
+  }
+
+  .extra-good__pack {
+    width: 132px;
+    padding-right: 112px;
+  }
+
+  .extra-good__price {
+    margin-left: 0;
   }
 }
 

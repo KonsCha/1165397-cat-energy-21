@@ -2,10 +2,44 @@
   width: 280px;
   height: 289px;
   background-image: url(../img/gift-photo-mobile.png);
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .promo__description {
   font-family: @font2;
   line-height: 20px;
   color: @white;
+  margin: 0;
+  padding: 186px 61px 43px 58px;
+}
+
+@media (min-width: @tablet-width) {
+
+  .promo {
+    width: 708px;
+    height: 200px;
+    background-image: url(../img/gift-photo-tablet.png);
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .promo__description {
+    padding: 71px 124px 69px 423px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  
+  .promo {
+    width: 245px;
+    height: 289px;
+    background-image: url(../img/gift-photo-mobile.png);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .promo__description {
+    padding: 185px 43px 42px 41px;
+  }
 }
