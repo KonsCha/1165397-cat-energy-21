@@ -108,7 +108,9 @@
 @media (min-width: @desktop-width) {
   .form__wrapper {
     display: grid;
+    align-items: start;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
   }
   .form__contacts-form {
     flex-direction: row;
@@ -132,5 +134,9 @@
   .form__wrapper-extra-one {
     margin-bottom: 82px;
     margin-top: 41px;
+  }
+
+  .form__extra-wrapper {
+    width: 45%;
   }
 }
