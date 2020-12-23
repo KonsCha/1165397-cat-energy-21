@@ -6,6 +6,7 @@
 .field-text__name {
   line-height: 18px;
   color: @special_dark-grey;
+  flex-shrink: 0;
 }
 
 .field-text__input {
@@ -19,6 +20,14 @@
   padding-left: 16px;
   border: 1px solid #e7e7e7;
   margin-left: 11px;
+}
+
+.field-text__input--textarea {
+  padding-bottom: 125px;
+}
+
+.field-text__input-wrap {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -35,8 +44,9 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  .field-text__input--textarea {
+    padding-bottom: 134px;
+  }
 }
 
-@media (min-width: @desktop-width) {
-  
-}

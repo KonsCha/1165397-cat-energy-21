@@ -6,6 +6,13 @@
   margin-top: 20px;
 }
 
+@media (min-resolution: 2dppx) {
+  .promo {
+    background-image: url("../img/gift-photo-mobile@2x.png");
+    background-size: 280px auto;
+  }
+}
+
 .promo__description {
   font-family: @font2;
   line-height: 20px;
@@ -21,7 +28,13 @@
     height: 200px;
     background-image: url(../img/gift-photo-tablet.png);
     margin-top: 50px;
-    margin-bottom: 40px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      background-image: url("../img/gift-photo-tablet@2x.png");
+      background-size: 708px auto;
+    }
   }
 
   .promo__description {
@@ -30,16 +43,24 @@
 }
 
 @media (min-width: @desktop-width) {
-  
+
   .promo {
     width: 245px;
     height: 289px;
-    background-image: url(../img/gift-photo-mobile.png);
+    background-image: url(../img/gift-photo-desktop.png);
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      background-image: url("../img/gift-photo-desktop@2x.png");
+      background-size: 245px auto;
+    }
   }
 
   .promo__description {
     padding: 185px 43px 42px 41px;
   }
+
 }

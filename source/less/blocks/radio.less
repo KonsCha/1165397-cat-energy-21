@@ -8,8 +8,6 @@
 .radio__item {
   line-height: 18px;
   list-style-type: none;
-  padding-left: 45px;
-  padding-bottom: 25px;
 }
 
 .radio__list {
@@ -22,6 +20,12 @@
   display: block;
 }
 
+.check {
+  position: relative;
+  padding-left: 45px;
+  padding-bottom: 25px;
+}
+
 .check__input {
   position: absolute;
   -webkit-appearance: none;
@@ -31,7 +35,8 @@
 
 .radio__box {
   position: absolute;
-  margin-left: -45px;
+  top: -6px;
+  left: 0;
   width: 30px;
   height: 30px;
   background-image: url(../img/radiobutton-mobile.svg);
@@ -45,17 +50,15 @@
   .radio__item {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 88px;
-    padding-bottom: 23px;
   }
 
   .radio__list {
     padding-top: 25px;
-    padding-bottom: 7px;
+    padding-bottom: 0px;
   }
 
   .radio__box {
-    margin-left: -63px;
+    left: 28px;
     width: 40px;
     height: 40px;
     background-image: url(../img/radiobutton-tablet.svg);
@@ -64,9 +67,6 @@
   .check__input:checked+.radio__box {
     background-image: url(../img/radiobutton-active-tablet.svg);
   }
-}
-
-@media (min-width: @desktop-width) {
 
   .radio {
     border-top: none;
@@ -74,9 +74,17 @@
     border: 1px solid #e7e7e7;
   }
 
+  .check {
+    padding-left: 88px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
   .radio__list {
     padding-top: 30px;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
   }
 
 }
