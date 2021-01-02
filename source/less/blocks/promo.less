@@ -4,6 +4,7 @@
   background-image: url(../img/gift-photo-mobile.png);
   display: inline-block;
   margin-top: 20px;
+  position: relative;
 }
 
 @media (min-resolution: 2dppx) {
@@ -11,6 +12,12 @@
     background-image: url("../img/gift-photo-mobile@2x.png");
     background-size: 280px auto;
   }
+}
+
+.promo__icon--gift {
+  position: absolute;
+  top: 58px;
+  left: 101px;
 }
 
 .promo__description {
@@ -40,6 +47,10 @@
   .promo__description {
     padding: 71px 124px 69px 423px;
   }
+
+  .promo__icon--gift {
+    left: 78px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -61,6 +72,10 @@
 
   .promo__description {
     padding: 185px 43px 42px 41px;
+  }
+
+  .promo__icon--gift {
+    left: 84px;
   }
 
 }

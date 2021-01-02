@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.page-footer__pin {
+  position: absolute;
+  left: 50%;
+  top: 115px;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__wrapper-extra {
     display: flex;
@@ -15,10 +21,22 @@
     margin-top: 76px;
   }
 
+  .page-footer__pin {
+    position: absolute;
+    left: 50%;
+    top: 146px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
     margin-top: 86px;
+  }
+
+  .page-footer__pin {
+    position: absolute;
+    left: 878px;
+    top: 131px;
   }
 }
