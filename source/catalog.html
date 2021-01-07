@@ -34,7 +34,8 @@
     <symbol viewBox="0 0 78 80" fill="none" id="icon-gift">
       <path d="M64.02 34.71H14.03a3.17 3.17 0 01-3.18-3.16v-9.47a3.17 3.17 0 013.18-3.16h49.98a3.17 3.17 0 013.19 3.16v9.47a3.17 3.17 0 01-3.18 3.16zM14.03 21.35c-.4 0-.74.33-.74.73v9.47c0 .41.33.74.74.74h49.98c.41 0 .75-.33.75-.74v-9.47c0-.4-.34-.73-.75-.73H14.03z" fill="#fff"/><path d="M57.04 67.15H21a6.11 6.11 0 01-6.13-6.09V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v27.56A3.68 3.68 0 0021 64.73h36.04a3.68 3.68 0 003.7-3.67V33.5a1.22 1.22 0 012.44 0v27.56a6.11 6.11 0 01-6.14 6.09z" fill="#fff"/><path d="M39.02 67.15c-.67 0-1.22-.54-1.22-1.21V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v32.44c0 .67-.54 1.2-1.22 1.2zM23.81 21.34a7.8 7.8 0 01-3.17-10.6A7.9 7.9 0 0131.3 7.6c5.82 3.13 8.96 11.86 9.09 12.23l-2.3.8c-.03-.08-2.96-8.22-7.95-10.9a5.46 5.46 0 00-7.36 2.17 5.39 5.39 0 002.2 7.32l-1.17 2.13z" fill="#fff"/><path d="M54.23 21.34l-1.16-2.13a5.38 5.38 0 00-1.03-9.92 5.43 5.43 0 00-4.14.43c-4.98 2.68-7.91 10.82-7.94 10.9l-2.3-.8c.13-.37 3.27-9.1 9.08-12.23a7.86 7.86 0 0111.29 9.1c-.6 2-1.95 3.66-3.8 4.65zM61.95 50.93H16.09c-.67 0-1.22-.54-1.22-1.2 0-.68.55-1.22 1.22-1.22h45.86c.67 0 1.22.54 1.22 1.21 0 .67-.55 1.21-1.22 1.21z" fill="#fff"/>
       <path d="M61.9496 50.9317H16.0929C15.4201 50.9317 14.8741 50.3891 14.8741 49.7206C14.8741 49.0521 15.4201 48.5095 16.0929 48.5095H61.9496C62.6223 48.5095 63.1683 49.0521 63.1683 49.7206C63.1683 50.3891 62.6229 50.9317 61.9496 50.9317Z" fill="white"/>
-      </symbol>
+    </symbol>
+    <symbol viewBox="0 0 27 34" fill="none" id="logo-html" ><path d="M13.64.02L13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24z" fill="#666"/></symbol>
   </svg>
   <header class="page-header">
     <div class="page-header__wrapper container">
@@ -395,7 +396,7 @@
           </ul>
           <div class="extra-goods__promo promo">
             <svg class="promo__icon promo__icon--gift" width="78" height="80">
-              <use xlink:href="#icon-gift"></use>
+              <use href="#icon-gift"></use>
             </svg>
             <a class="promo__link">
               <p class="promo__description">Закажите все<br>
@@ -429,17 +430,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="#"><svg class="social__icon social__icon--vkontakte" width="23" height="16">
-                <use xlink:href="#vk"></use>
+                <use href="#vk"></use>
               </svg></a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#"><svg class="social__icon social__icon--instagram" width="16" height="16">
-                <use xlink:href="#inst"></use>
+                <use href="#inst"></use>
               </svg></a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#"><svg class="social__icon social__icon--facebook" width="22" height="22">
-                <use xlink:href="#facebook"></use>
+                <use href="#facebook"></use>
               </svg></a>
             </li>
           </ul>
@@ -447,7 +448,9 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">HTML Academy</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/Лого_html.svg" width="" height="" alt="Лого_html">
+            <svg class="page-footer__logo" width="27" height="34">
+              <use href="#logo-html"></use>
+            </svg>
           </a>
         </div>
       </div>
