@@ -14,11 +14,9 @@
 
 .contacts {
   display: flex;
-  position: absolute;
-  top: -86px;
+  height: 114px;
+  padding-top: 28px;
 }
-
-
 
 .contacts--grey::after {
   content: "";
@@ -40,10 +38,16 @@
 }
 
 @media (min-width: @tablet-width) {
+
+  .contacts {
+    height: 201px;
+    padding-top: 65px;
+  }
+
   .contacts__appeal {
     font-size: 20px;
     line-height: 21px;
-    width: 171px;
+    width: 159px;
     margin-right: 300px;
   }
 
@@ -60,16 +64,17 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
+    position: relative;
     justify-content: left;
-    top: 100px;
+    top: 95px;
     background-color: @white;
     width: 570px;
     height: 201px;
-
   }
 
-  .contacts--form {
-    position: absolute;
+  .contacts-index {
+    top: 180px;
+    z-index: 5;
   }
 
   .contacts__appeal {
@@ -82,9 +87,5 @@
 
   .contacts__text {
     padding: 65px 89px;
-  }
-
-  .contacts--form {
-    padding: 0;
   }
 }
