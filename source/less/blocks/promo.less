@@ -3,7 +3,7 @@
   height: 289px;
   background-image: url(../img/gift-photo-mobile.png);
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 36px;
   position: relative;
 }
 
@@ -25,7 +25,10 @@
   line-height: 20px;
   color: @white;
   margin: 0;
-  padding: 186px 61px 43px 58px;
+  position: absolute;
+  top: 187px;
+  left: 58px;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -34,7 +37,7 @@
     width: 708px;
     height: 200px;
     background-image: url(../img/gift-photo-tablet.png);
-    margin-top: 50px;
+    margin-top: 72px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -46,6 +49,9 @@
 
   .promo__description {
     padding: 71px 124px 69px 423px;
+    top: 0;
+    left: 0;
+    text-align: left;
   }
 
   .promo__icon--gift {
@@ -72,6 +78,8 @@
 
   .promo__description {
     padding: 185px 43px 42px 41px;
+    text-align: center;
+    top: 5px;
   }
 
   .promo__icon--gift {

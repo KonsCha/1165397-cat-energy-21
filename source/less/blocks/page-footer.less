@@ -1,6 +1,6 @@
 .page-footer {
   background-color: @basic_grey;
-  margin-top: 35px;
+  margin-top: 18px;
   position: relative;
 }
 
@@ -21,16 +21,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 60px;
   }
 
   .page-footer {
-    margin-top: 76px;
+    margin-top: 65px;
+  }
+
+  .page-footer__iframe {
+    height: 400px;
   }
 
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    margin-top: 86px;
+    margin-top: 0;
+  }
+
+  .page-footer__wrapper--nonebackcolor {
+    display: none;
+  }
+
+  .page-footer__wrapper-extra {
+    margin-left: 0;
+    margin-top: 62px;
   }
 }

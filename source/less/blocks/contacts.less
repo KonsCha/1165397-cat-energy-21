@@ -3,6 +3,7 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
+  max-width: 50%;
 }
 
 .contacts__text {
@@ -10,6 +11,7 @@
   line-height: 20px;
   color: @special_dark-grey;
   margin: 0;
+  max-width: 50%
 }
 
 .contacts {
@@ -42,6 +44,9 @@
   .contacts {
     height: 201px;
     padding-top: 65px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 24px;
   }
 
   .contacts__appeal {
@@ -66,10 +71,11 @@
   .contacts {
     position: relative;
     justify-content: left;
-    top: 95px;
+    top: 250px;
     background-color: @white;
     width: 570px;
     height: 201px;
+    display: block;
   }
 
   .contacts-index {

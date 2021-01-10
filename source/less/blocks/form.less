@@ -13,27 +13,38 @@
   line-height: 26px;
   margin: 0;
   margin-top: 25px;
+  padding-bottom: 3px;
+}
+
+.form__title--comment {
+  margin-top: 8px;
+  margin-bottom: 31px;
+}
+
+.form__title--extra {
+  margin-top: 22px;
+  padding-bottom: 0;
 }
 
 .form__description {
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   margin: 0;
   margin-top: 37px;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .form__main-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .form__contacts-form {
   display: flex;
   flex-direction: column;
-  margin-top: 45px;
-  margin-bottom: 41px;
+  margin-top: 30px;
 }
 
 .form__button {
@@ -45,6 +56,7 @@
   color: @white;
   font-family: @font1;
   width: 280px;
+  margin-bottom: 7px;
 }
 .form__button:hover {
   background-color: @basic_green-2;
@@ -58,23 +70,26 @@
   font-family: @font2;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 80px;
 }
 
 .form__wrapper-extra-one {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 32px;
 }
 
 @media (min-width: @tablet-width) {
+
+  .form {
+    padding-right: 37px;
+    padding-left: 39px;
+  }
 
   .form__title-main {
     font-size: 60px;
     line-height: 60px;
     border-top: none;
-    padding-top: 55px;
+    padding-top: 49px;
   }
 
   .form__description {
@@ -91,6 +106,17 @@
     margin-bottom: 76px;
   }
 
+  .form__title--comment {
+    margin-top: 41px;
+    margin-bottom: 73px;
+  }
+
+  .form__title--extra {
+    margin-top: 65px;
+    padding-bottom: 0;
+    margin-bottom: 39px;
+  }
+
   .form__main-form {
     margin-bottom: 52px;
   }
@@ -99,21 +125,31 @@
     font-size: 20px;
     width: 282px;
     margin-right: 61px;
+    padding: 13px 44px;
   }
 
   .form__sure-fields {
     font-size: 16px;
     margin: 0;
+    margin-bottom: 13px;
+    margin-left: 2px;
   }
 
   .form__wrapper-extra-one {
     flex-direction: row;
-    margin-top: 34px;
     margin-bottom: 152px;
+    align-items: center;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
+
+  .form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .form__wrapper {
     display: grid;
     align-items: start;
@@ -123,10 +159,24 @@
   .form__contacts-form {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 43px;
+  }
+
+  .form__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 75px;
   }
 
   .form__title-main {
-    padding-top: 67px;
+    padding-top: 58px;
+  }
+
+  .form__title--extra {
+    margin-top: 22px;
+    padding-bottom: 0;
+    margin-bottom: 37px;
   }
 
   .form__description {
@@ -140,11 +190,16 @@
   }
 
   .form__wrapper-extra-one {
-    margin-bottom: 82px;
-    margin-top: 41px;
+    margin-bottom: 74px;
+    margin-top: 28px;
   }
 
   .form__extra-wrapper {
-    width: 45%;
+    width: 47%;
+  }
+
+  .form__main-form {
+    margin-bottom: 47px;
+    margin-top: 2px;
   }
 }
