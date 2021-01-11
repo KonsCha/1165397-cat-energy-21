@@ -19,7 +19,7 @@
   position: relative;
 }
 
-.advantages__item::before {
+.advantages__item--leaf::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -27,6 +27,48 @@
   width: 60px;
   height: 60px;
   background-color: @basic_green;
+  background-image: url(../img/icon_leaf.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--tub::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: @basic_green;
+  background-image: url(../img/icon_tub.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--eat::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: @basic_green;
+  background-image: url(../img/icon_eat.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--alarm::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: @basic_green;
+  background-image: url(../img/icon_alarm.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages__description {
@@ -37,54 +79,6 @@
   margin: 13px 0;
   margin-left: 80px;
   position: relative;
-}
-
-.advantages__description--leaf::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 32px;
-  left: -40px;
-  top: 0;
-  background-image: url(../img/icon_leaf.svg);
-  background-repeat: no-repeat;
-  z-index: 5;
-}
-
-.advantages__description--tub::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 32px;
-  left: -40px;
-  top: 0;
-  background-image: url(../img/icon_tub.svg);
-  background-repeat: no-repeat;
-  z-index: 5;
-}
-
-.advantages__description--eat::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 32px;
-  left: -40px;
-  top: 0;
-  background-image: url(../img/icon_eat.svg);
-  background-repeat: no-repeat;
-  z-index: 5;
-}
-
-.advantages__description--alarm::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 32px;
-  left: -40px;
-  top: 0;
-  background-image: url(../img/icon_alarm.svg);
-  background-repeat: no-repeat;
-  z-index: 5;
 }
 
 .advantages__description--leaf::after {
@@ -147,25 +141,6 @@
   top: -111px;
 }
 
-.advantages__description--leaf-2::before {
-  left: 27px;
-  top: -85px;
-}
-
-.advantages__description--tub-2::before {
-  left: 27px;
-  top: -85px;
-}
-
-.advantages__description--eat-2::before {
-  left: 27px;
-  top: -85px;
-}
-
-.advantages__description--alarm-2::before {
-  left: 27px;
-  top: -85px;
-}
 
 .advantages__description--leaf::after {
   display: block;

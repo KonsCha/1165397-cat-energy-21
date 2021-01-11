@@ -9,11 +9,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
+  padding-top: 14px;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
+
+.copyright__link {
+  padding-top: 5px;
 }
 
 @media (min-width: @tablet-width) {
   .copyright__link {
     padding-left: 22px;
+  }
+
+  .copyright {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    padding-top: 5px;
   }
 }

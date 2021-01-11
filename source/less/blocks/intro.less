@@ -47,7 +47,9 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 73px;
+  padding: 14px 44px;
+  width: 100%;
+  display: inline-block;
   background-color: @basic_green;
   text-decoration: none;
   color: @white;
@@ -74,9 +76,6 @@
     display: none;
   }
 
-  .intro__wrapper {
-    position: relative;
-  }
 
   .intro__title {
     font-weight: 400;
@@ -85,7 +84,7 @@
     padding: 0;
     padding-top: 52px;
     text-align: left;
-    margin-left: 87px;
+    padding-left: 87px;
   }
 
   .intro__slogan {
@@ -94,7 +93,7 @@
     text-transform: uppercase;
     padding-top: 21px;
     text-align: left;
-    margin-left: 87px;
+    padding: 0;
   }
 
   .intro__link {
@@ -104,14 +103,16 @@
     color: @white;
     position: absolute;
     top: 270px;
-    left: 112px;
+    left: 82px;
+    width: 244px;
+    z-index: 5;
   }
 
 }
 
 @media (min-width: @desktop-width) {
   .intro {
-    background-color: @white;
+    background-color: transparent;
     color: @black;
     min-height: 550px;
     position: relative;
@@ -128,7 +129,6 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    margin-left: 80px;
   }
   .intro__link {
     font-size: 20px;

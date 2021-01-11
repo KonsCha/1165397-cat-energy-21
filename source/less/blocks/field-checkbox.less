@@ -10,7 +10,7 @@
 
 .field-checkbox__list {
   padding: 0;
-  padding-top: 25px;
+  padding-top: 24px;
 }
 
 .field-checkbox-option {
@@ -29,6 +29,7 @@
 .field-checkbox__box {
   position: absolute;
   left: 0;
+  top: -6px;
   width: 30px;
   height: 30px;
   background-image: url(../img/checkbox-mobile.svg);
@@ -43,10 +44,15 @@
     font-size: 20px;
     line-height: 30px;
     width: 40%;
+    margin-right: 34px;
+    padding-bottom: 40px;
   }
+
   .field-checkbox__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 22px;
   }
 
   .field-checkbox__box {
@@ -69,5 +75,11 @@
   .field-checkbox__list {
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  .field-checkbox__item {
+    width: 20%;
+    margin-right: 0;
+    padding-bottom: 40px;
   }
 }
