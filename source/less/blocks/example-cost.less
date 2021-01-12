@@ -1,29 +1,51 @@
 .example-cost__description {
   font-size: 14px;
   line-height: 20px;
-  padding-bottom: 42px;
-  padding-top: 13px;
-  margin-left: 46px ;
+  padding-bottom: 27px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.example-cost__description-price {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 20px;
 }
 
 .example-cost {
   display: block;
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {
   .example-cost__description {
     font-size: 20px;
     position: absolute;
-    top: 180px;
+    top: 161px;
     right: 0;
+    width: 174px;
+    text-align: right;
+  }
+
+  .example-cost__description-price {
+    font-size: 20px;
+    position: absolute;
+    top: 190px;
+    right: 0;
+    width: 174px;
+    text-align: right;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example-cost__description {
-    position: static;
-    float: left;
-    margin-left: 0;
+    top: 300px;
+    left: 0;
+  }
+
+  .example-cost__description-price {
+    top: 300px;
+    left: 152px;
   }
 }
