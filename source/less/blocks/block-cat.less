@@ -1,11 +1,68 @@
-@media (min-width: @tablet-width) {
+.block-cat {
+  position: relative;
+  left: 10px;
+  left: 44%;
+  transform: translateX(-50%);
+  padding-bottom: 84px;
+}
 
+@media (min-width: @tablet-width) {
+  .block-cat {
+    display: flex;
+  }
+
+  .block-cat--fat {
+    position: absolute;
+    left: 58px;
+    top: -172px;
+    width: 48%;
+    overflow: hidden;
+  }
+
+  .block-cat--skinny {
+    position: absolute;
+    right: 14px;
+    top: -172px;
+    width: 43%;
+    overflow: hidden;
+    direction: rtl;
+    z-index: -1;
+  }
+
+  .block-cat__wrapper {
+    background-color: #eaeaea;
+    width: 100%;
+    height: 463px;
+    position: relative;
+    top: 172px;
+    z-index: 5;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .block-cat {
+
+  .block-cat__wrapper {
+    height: 412px;
+    top: -46px;
+    left: 108px;
+    background-color: transparent;
+  }
+
+  .block-cat--fat {
     position: absolute;
-    right: 0;
-    top: -150px;
+    left: 73px;
+    top: -172px;
+    width: 47%;
+    overflow: hidden;
+  }
+
+  .block-cat--skinny {
+    position: absolute;
+    right: 75px;
+    top: -172px;
+    width: 35%;
+    overflow: hidden;
+    direction: rtl;
+    z-index: -1;
   }
 }
