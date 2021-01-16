@@ -1,12 +1,11 @@
 .intro {
-  color: @white;
   text-align: center;
+  color: @white;
   background-image: url(../img/index-background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 300px;
   position: relative;
-  z-index: 1;
 }
 
 .intro::after {
@@ -33,8 +32,8 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  padding: 25px 0;
-  text-align: center;
+  margin-bottom: 25px;
+  padding-top: 25px;
 }
 
 .intro__slogan {
@@ -73,6 +72,8 @@
     color: @black;
     background-image: none;
     min-height: 650px;
+    text-align: left;
+    z-index: -1;
   }
 
   .intro::after {
@@ -84,22 +85,18 @@
     font-size: 60px;
     line-height: 60px;
     padding: 0;
-    padding-top: 50px;
-    text-align: left;
-    padding-left: 116px;
+    margin-bottom: 42px;
+    padding-top: 49px;
+    margin-left: 87px;
   }
 
   .intro__slogan {
     font-size: 20px;
     line-height: 20px;
-    text-transform: uppercase;
-    text-align: left;
     padding: 0;
     margin: 0;
-    position: absolute;
-    left: 118px;
-    top: 210px;
-    z-index: 5;
+    margin-bottom: 49px;
+    margin-left: 87px;
   }
 
   .intro__link {
@@ -107,11 +104,8 @@
     line-height: 20px;
     padding: 17px 26px;
     color: @white;
-    position: absolute;
-    top: 279px;
-    left: 112px;
     width: 244px;
-    z-index: 5;
+    margin-left: 83px;
   }
 
 }
@@ -121,30 +115,22 @@
     background-color: transparent;
     color: @black;
     min-height: 550px;
-    position: relative;
     padding-top: 48px;
+    z-index: 1;
   }
 
   .intro__title {
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    margin-left: 74px;
+    margin-bottom: 40px;
+    padding-top: 49px;
+    margin-left: 80px;
   }
 
   .intro__slogan {
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    left: 190px;
-    top: 257px;
-  }
-  .intro__link {
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    top: 329px;
-    left: 190px;
+    margin-bottom: 52px;
+    margin-left: 80px;
   }
 
+  .intro__link {
+    margin-left: 80px;
+  }
 }

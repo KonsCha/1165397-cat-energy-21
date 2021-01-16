@@ -74,27 +74,25 @@
     <main class="page-main">
       <h1 class="visually-hidden">Сайт "Cat Energy" </h1>
       <section class="intro">
-        <h2 class="visually-hidden">Интро Кэт Энерджи</h2>
-        <h2 class="intro__title">Функциональное<br>
-        питание для котов</h2>
-        <p class="intro__slogan">Занялся собой? Займись котом!</p>
-        <div class="intro__block block-can">
-          <picture>
-            <source media="(min-width: 1440px)" type="image/webp" srcset="img/index-can.webp 1x, img/index-can@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/index-can.png 1x, img/index-can@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
-            <img class="intro__block-image image-can" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="Энергетический корм">
-          </picture>
-        </div>
         <div class="intro__wrapper container">
+          <h2 class="intro__title">Функциональное<br>
+          питание для котов</h2>
+          <p class="intro__slogan">Занялся собой? Займись котом!</p>
+          <div class="intro__block block-can">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/index-can.webp 1x, img/index-can@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/index-can.png 1x, img/index-can@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+              <img class="intro__block-image image-can" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="Энергетический корм">
+            </picture>
+          </div>
           <a class="intro__link" href="#">подобрать программу</a>
         </div>
       </section>
       <section class="programms">
         <div class="programms__wrapper container">
-          <h2 class="visually-hidden">Программы Кэт Энерджи</h2>
           <article class="programms-article">
             <div class="programms-article__img">
               <svg class="programms-article__icon programms-article__icon--slim" width="36" height="50">
@@ -122,7 +120,6 @@
       </section>
       <section class="advantages">
         <div class="advantages__wrapper container">
-          <h2 class="visually-hidden">Преимущества Кэт Энерджи</h2>
           <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--leaf advantages__item--bigger">
@@ -150,7 +147,6 @@
       </section>
       <section class="example">
         <div class="example__wrapper container">
-          <h2 class="visually-hidden">Пример Кэт Энерджи</h2>
           <h2 class="example__title">Живой пример</h2>
           <div class="example__wrapper-extra">
             <div class="example__story story">
@@ -179,27 +175,23 @@
                   <source media="(min-width: 768px)" type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
-                  <img class="example__block-image image-cat" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот">
+                  <img class="example__block-image" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот">
                 </picture>
                 <picture class="example__block block-cat--skinny">
                   <source media="(min-width: 768px)" type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
-                  <img class="example__block-image image-cat" src="" srcset="" alt="Худой кот">
+                  <img class="example__block-image example__block-image--skinny" src="" srcset="" alt="Худой кот">
                 </picture>
               </div>
               <div class="example__range range">
-                <div class="range__was-wrapper">
-                  <p class="range__was">было</p>
-                </div>
+                <p class="range__name">было</p>
                 <div class="range__controls">
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
                   <div class="toggle"></div>
                 </div>
-                <div class="range__now-wrapper">
-                  <p class="range__now">стало</p>
-                </div>
+                <p class="range__name">стало</p>
               </div>
             </div>
           </div>
@@ -210,15 +202,19 @@
       <div class="page-footer__wrapper page-footer__wrapper--index">
         <div class="container">
           <div class="page-footer__contacts contacts">
-            <p class="contacts__appeal">приглашаем
-              к сотрудничеству дилеров!</p>
-            <p class="contacts__text">ул. Большая
-              Конюшенная, д. 19/8
-              Санкт-Петербург</p>
+            <div class="contacts__wrapper">
+              <p class="contacts__appeal">приглашаем<br>
+              к сотрудничеству<br>дилеров!</p>
+            </div>
+            <div class="contacts__wrapper-extra">
+              <p class="contacts__text contacts__text--adress">ул. Большая
+                Конюшенная, д. 19/8</p>
+              <p class="contacts__text contacts__text--city">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
       </div>
-      <iframe
+      <iframe class="page-footer__iframe"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2334.354390978542!2d37.59931151576434!3d54.19150888016482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41344079a425caf7%3A0x39c7983d3425c2ad!2sUlitsa%20Leyteyzena%2C%2018%2C%20Tula%2C%20Tulskaya%20oblast&#39;%2C%20300035!5e0!3m2!1sen!2sru!4v1603009249058!5m2!1sen!2sru"
       height="362" width=100% style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="page-footer__wrapper container">
@@ -250,7 +246,7 @@
           <div class="page-footer__copyright copyright">
             <p class="copyright__text">HTML Academy</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="page-footer__logo" width="27" height="34">
+              <svg class="page-footer__logo-html" width="27" height="34">
                 <use href="#logo-html"></use>
               </svg>
             </a>

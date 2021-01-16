@@ -1,8 +1,10 @@
 .block-cat {
-  position: absolute;
-  left: 0;
+  position: relative;
+  left: 10px;
+  left: 44%;
+  transform: translateX(-50%);
+  padding-bottom: 84px;
 }
-
 
 @media (min-width: @tablet-width) {
   .block-cat {
@@ -11,20 +13,26 @@
 
   .block-cat--fat {
     position: absolute;
-    left: 16px;
+    left: 58px;
     top: -172px;
+    width: 48%;
+    overflow: hidden;
   }
 
   .block-cat--skinny {
     position: absolute;
-    left: 108px;
+    right: 14px;
     top: -172px;
+    width: 43%;
+    overflow: hidden;
+    direction: rtl;
+    z-index: -1;
   }
 
   .block-cat__wrapper {
     background-color: #eaeaea;
     width: 100%;
-    height: 462px;
+    height: 463px;
     position: relative;
     top: 172px;
     z-index: 5;
@@ -32,18 +40,29 @@
 }
 
 @media (min-width: @desktop-width) {
-  .block-cat {
-    position: absolute;
-    right: 0;
-    top: -150px;
-  }
 
   .block-cat__wrapper {
+    height: 412px;
+    top: -46px;
+    left: 108px;
     background-color: transparent;
-    width: 100%;
-    min-height: 1px;
-    position: relative;
-    top: 172px;
-    z-index: 5;
+  }
+
+  .block-cat--fat {
+    position: absolute;
+    left: 73px;
+    top: -172px;
+    width: 47%;
+    overflow: hidden;
+  }
+
+  .block-cat--skinny {
+    position: absolute;
+    right: 75px;
+    top: -172px;
+    width: 35%;
+    overflow: hidden;
+    direction: rtl;
+    z-index: -1;
   }
 }

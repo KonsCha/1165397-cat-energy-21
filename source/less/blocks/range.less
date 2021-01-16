@@ -1,30 +1,28 @@
 .range {
   text-transform: uppercase;
   display: flex;
-  justify-content: space-between;
-}
-
-.range__was {
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  bottom: 18px;
-  left: 64px;
+  bottom: 33px;
+  margin-left: 44px;
 }
 
-.range__now {
-  position: absolute;
-  bottom: 18px;
-  right: 59px;
+.range__controls {
+  margin: 0 19px;
 }
 
+.range__name {
+  line-height: 24px;
+  margin: 0;
+}
 
 .range__controls .scale {
-  position: absolute;
   height: 14px;
   background-color: @white;
   width: 84px;
   border-radius: 6px;
-  bottom: 39px;
-  right: 116px;
+  position: relative;
 }
 
 .range__controls .bar {
@@ -38,22 +36,16 @@
 }
 
 @media (min-width: @tablet-width) {
+
   .range {
+    background-color: transparent;
+    padding-bottom: 36px;
+    margin-left: 0;
+  }
+
+  .range__name {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .range__was {
-    position: absolute;
-    bottom: 48px;
-    left: 68px;
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
-  }
-
-  .range__now {
-    position: absolute;
-    bottom: 48px;
-    right: 70px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
 
@@ -61,8 +53,6 @@
     height: 6px;
     background-color: #dcdcdc;
     width: 428px;
-    bottom: 81px;
-    right: 140px;
   }
 
   .range__controls .bar {
@@ -71,7 +61,7 @@
 
   .range__controls .toggle {
     position: absolute;
-    bottom: 67px;
+    bottom: 34px;
     left: 337px;
     width: 8px;
     height: 8px;
@@ -84,4 +74,20 @@
     box-sizing: content-box;
   }
 
+  .range__controls {
+    margin: 0 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .range__controls .toggle {
+    bottom: -2px;
+    left: 374px;
+  }
+
+  .range {
+    padding-bottom: 0;
+    margin-bottom: -34px;
+  }
 }
