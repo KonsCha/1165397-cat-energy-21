@@ -38,6 +38,12 @@
   display: inline-block;
   padding-top: 19px;
   position: relative;
+  text-decoration: none;
+  color: @black;
+}
+
+.programms-article__link:active {
+  opacity: 0.3;
 }
 
 .programms-article__img {
@@ -71,7 +77,6 @@
   top: 20px;
   background-image: url(../img/icon_arrow.svg);
   background-repeat: no-repeat;
-
 }
 
 @media (min-width: @tablet-width) {
@@ -80,7 +85,7 @@
     line-height: 36px;
     padding-left: 53px;
     padding-top: 77px;
-    padding-bottom: 24px;
+    padding-bottom: 26px;
   }
 
   .programms-article__description {
@@ -143,17 +148,19 @@
   .programms-article {
     width: 570px;
     height: 374px;
+    padding-top: 3px;
   }
 
   .programms-article__title {
     padding-left: 214px;
-    padding-top: 77px;
+    padding-top: 74px;
     padding-bottom: 73px;
   }
 
   .programms-article__description {
     width: 547px;
     padding-bottom: 27px;
+    padding-left: 51px;
   }
 
   .programms-article__link {

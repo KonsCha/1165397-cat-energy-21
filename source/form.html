@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт Энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
   <svg style="display: none">
     <symbol viewBox="0 0 36 50" fill="none" id="cat_back-slim">
@@ -40,7 +38,7 @@
   <header class="page-header">
     <div class="page-header__wrapper container">
       <div class="page-header__block">
-        <a class="page-header__logo logo-cat">
+        <a class="page-header__logo logo-cat" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -48,7 +46,7 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened">
         <a class="button-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </a>
@@ -72,7 +70,7 @@
       </nav>
     </div>
   </header>
-  <main class="page-main">
+  <main class="page-main overflow">
     <div class="page-main__wrapper container">
       <h1 class="visually-hidden">Форма "Cat Energy" </h1>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
@@ -102,18 +100,19 @@
           </div>
           <div class="form__radio radio">
             <ul class="radio__list">
-              <li class="radio__item"><label class="check option">
+              <li class="radio__item"><label class="radio__option check">
                   <input class="check__input" type="radio" name="answer" value="losing-weight" checked>
                   <span class="radio__box"></span>
                   похудение</label></li>
-              <li class="radio__item"><label class="check option">
+              <li class="radio__item"><label class="radio__option check">
                   <input class="check__input" type="radio" name="answer" value="gain-weight">
                   <span class="radio__box"></span>
                   Набор массы</label></li>
-              <li class="radio__item"><label class="check option">
+              <li class="radio__item"><label class="radio__option check">
                   <input class="check__input" type="radio" name="answer" value="need-advice">
                   <span class="radio__box"></span>
                   Не знаю (Нужен ваш совет)</label></li>
+            </ul>
           </div>
         </div>
         <h3 class="form__title">Контактные данные (владельца кота)</h3>
@@ -174,10 +173,11 @@
           <div class="form__wrapper-sure-fields"><p class="form__sure-fields">* — Обязательные поля</p></div>
         </div>
       </form>
+    </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="container">
+    <div class="container">
+      <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
           <div class="contacts__wrapper">
             <p class="contacts__appeal">приглашаем<br>
@@ -197,8 +197,8 @@
     <div class="page-footer__wrapper container">
       <div class="page-footer__wrapper-extra">
         <div class="page-footer__logo logo">
-          <a class="logo__link logo-mini">
-            <img src="img/footer-logo.svg" width="" height="" alt="Логотип мини">
+          <a class="logo__link logo-mini" href="index.html">
+            <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип мини">
           </a>
         </div>
         <div class="page-footer__social social">
@@ -232,5 +232,4 @@
     </div>
   </footer>
 </body>
-
 </html>

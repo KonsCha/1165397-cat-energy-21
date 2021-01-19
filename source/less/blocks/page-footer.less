@@ -20,8 +20,12 @@
   border-bottom: 1px solid #9d9d9d;
 }
 
-.page-footer__logo:hover {
+.page-footer__logo-html:hover {
   fill: @basic_green;
+}
+
+.page-footer__iframe {
+  border: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -29,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 22px;
+    margin-top: 23px;
   }
 
   .page-footer__logo {
@@ -38,10 +42,6 @@
 
   .page-footer__social {
     border-bottom: none;
-  }
-
-  .page-footer--index {
-    margin-top: 118px;
   }
 
   .page-footer__iframe {
@@ -54,11 +54,11 @@
     margin-top: 0;
   }
 
-  .page-footer__wrapper-extra {
-    margin-left: 0;
+  .page-footer__wrapper {
+    position: relative;
   }
 
-  .page-footer--index {
-    margin-top: 0;
+  .page-footer__wrapper-extra {
+    margin-left: 0;
   }
 }
