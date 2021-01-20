@@ -31,7 +31,13 @@
 }
 
 .field-text__input:focus {
-  border: 1px solid @special_dark-grey;
+  outline: none;
+  border: 2px solid @special_dark-grey;
+}
+
+.field-text__input:invalid {
+  outline: none;
+  border: 2px solid #FF8282;
 }
 
 .field-text__icon--email,
