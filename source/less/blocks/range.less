@@ -9,7 +9,7 @@
 }
 
 .range__controls {
-  margin: 0 19px;
+  margin: 0 17px;
 }
 
 .range__name {
@@ -63,19 +63,41 @@
     position: absolute;
     bottom: 34px;
     left: 337px;
-    width: 8px;
-    height: 8px;
+    width: 34px;
+    height: 34px;
     padding: 0;
-    border: 13px solid @white;
-    background-color: @basic_green;
+    background-color: #fff;
     border-radius: 50%;
-    box-shadow: 1px 1px 1px 1px @special_grey;
+    box-shadow: 1px 1px 1px 1px #cdcdcd;
     cursor: pointer;
     box-sizing: content-box;
   }
 
+  .range__controls .toggle::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: @basic_green;
+    border-radius: 50%;
+    bottom: 39%;
+    left: 39%;
+  }
+
+  .range__controls .toggle:active {
+    border: 1px solid @basic_green;
+  }
+
   .range__controls {
     margin: 0 22px;
+  }
+
+  .range__name:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .range__name:active {
+    border-bottom: none;
   }
 }
 

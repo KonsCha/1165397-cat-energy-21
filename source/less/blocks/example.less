@@ -22,7 +22,7 @@
     line-height: 60px;
   }
   .example {
-    background-color: @white;
+    background-image: linear-gradient(180deg, #fff 601px, #eaeaea 20px);
   }
 
   .example__block-image--skinny {
@@ -32,6 +32,14 @@
   .example__range {
     background-color: #eaeaea;
     width: 100%;
+  }
+
+  .example__wrapper-cat {
+    background-color: #eaeaea;
+    width: 100%;
+    height: 463px;
+    position: relative;
+    z-index: 5;
   }
 }
 
@@ -48,11 +56,18 @@
 
   .example {
     background-color: @basic_grey;
+    background-image: none;
     margin-top: 37px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 
   .example__wrapper-extra {
     display: flex;
+  }
+  .example__wrapper-cat {
+    height: 412px;
+    top: -46px;
+    left: 108px;
+    background-color: transparent;
   }
 }

@@ -38,6 +38,12 @@
   display: inline-block;
   padding-top: 19px;
   position: relative;
+  text-decoration: none;
+  color: @black;
+}
+
+.programms-article__link:active {
+  opacity: 0.3;
 }
 
 .programms-article__img {
@@ -68,10 +74,14 @@
   width: 32px;
   height: 10px;
   right: -49px;
-  top: 20px;
+  top: 21px;
   background-image: url(../img/icon_arrow.svg);
   background-repeat: no-repeat;
+  background-position: -8px 0px;
+}
 
+.programms-article__link:hover::after {
+  background-position: 0px 0px;
 }
 
 @media (min-width: @tablet-width) {
@@ -80,7 +90,7 @@
     line-height: 36px;
     padding-left: 53px;
     padding-top: 77px;
-    padding-bottom: 24px;
+    padding-bottom: 26px;
   }
 
   .programms-article__description {
@@ -133,8 +143,8 @@
 
   .programms-article__link::after {
     right: -57px;
-    top: 40px;
-    background: url(../img/icon_arrow.svg);
+    top: 38px;
+    background-position: -7px 0px;
   }
 
 }
@@ -143,17 +153,19 @@
   .programms-article {
     width: 570px;
     height: 374px;
+    padding-top: 3px;
   }
 
   .programms-article__title {
     padding-left: 214px;
-    padding-top: 77px;
+    padding-top: 74px;
     padding-bottom: 73px;
   }
 
   .programms-article__description {
     width: 547px;
     padding-bottom: 27px;
+    padding-left: 51px;
   }
 
   .programms-article__link {
@@ -185,7 +197,6 @@
   .programms-article__link::after {
     right: -59px;
     top: 10px;
-    background: url(../img/icon_arrow.svg);
   }
 }
 

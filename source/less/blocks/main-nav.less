@@ -17,8 +17,8 @@
   position: relative;
   display: block;
   text-align: center;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding-top: 23px;
+  padding-bottom: 22px;
   text-transform: uppercase;
   text-decoration: none;
   border-top: 1px solid #e6e6e6;
@@ -54,6 +54,7 @@
     text-transform: uppercase;
     padding-bottom: 21px;
   }
+  
   .main-nav__list {
     width: 440px;
     display: flex;
@@ -64,6 +65,14 @@
     border-top: none;
     padding: 0;
     margin: 0;
+  }
+
+  .main-nav__list a:hover {
+    opacity: 0.6;
+  }
+
+  .main-nav__list a:active {
+    opacity: 0.3;
   }
 
   .main-nav__item--active {
@@ -96,5 +105,13 @@
 
   .main-nav__item {
     padding-left: 4px;
+  }
+
+  .main-nav__list .main-nav__link--cat:hover {
+    opacity: 0.6;
+  }
+
+  .main-nav__list .main-nav__link--cat:active {
+    opacity: 0.3;
   }
 }

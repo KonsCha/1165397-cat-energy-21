@@ -13,10 +13,10 @@
 .radio__list {
   padding: 0;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 27px;
 }
 
-.option {
+.radio__option{
   display: block;
 }
 
@@ -42,8 +42,18 @@
   background-image: url(../img/radiobutton-mobile.svg);
 }
 
-.check__input:checked+.radio__box {
+.check__input:checked + .radio__box {
   background-image: url(../img/radiobutton-active-mobile.svg);
+}
+
+.radio__box:hover {
+  border: 1px solid #BABABA;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.radio__box:disabled {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,10 +71,11 @@
     left: 28px;
     width: 40px;
     height: 40px;
-    background-image: url(../img/radiobutton-tablet.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-  .check__input:checked+.radio__box {
+  .check__input:checked + .radio__box {
     background-image: url(../img/radiobutton-active-tablet.svg);
   }
 
@@ -83,7 +94,7 @@
 @media (min-width: @desktop-width) {
 
   .radio__list {
-    padding-top: 28px;
+    padding-top: 30px;
     padding-bottom: 0;
   }
 
