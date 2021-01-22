@@ -35,18 +35,23 @@
   border: 2px solid @special_dark-grey;
 }
 
-.field-text__input:invalid {
+.field-text__input:focus:invalid {
   outline: none;
   border: 2px solid #FF8282;
 }
 
-.field-text__icon--email,
 .field-text__icon--phone {
   position: absolute;
-  top: 15px;
-  right: 14px;
+  top: 12px;
+  right: 13px;
+  fill: @black;
 }
 
+.field-text__icon--email {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
 
 .field-text__input--textarea {
   width: 100%;
@@ -94,6 +99,15 @@
     margin-left: 0;
     height: 174px;
   }
+
+  .field-text__icon--phone {
+    top: 15px;
+    right: 16px;
+  }
+  .field-text__icon--email {
+    top: 19px;
+    right: 17px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -105,11 +119,14 @@
     margin-left: 18px;
   }
 
-  .field-text__icon--email,
+  .field-text__icon--email {
+  top: 18px;
+  right: 22px;
+  }
+
   .field-text__icon--phone {
-  position: absolute;
-  top: 15px;
-  right: 18px;
+    top: 15px;
+    right: 17px;
   }
 
   .field-text__input--textarea {
