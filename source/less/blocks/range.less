@@ -5,19 +5,24 @@
   justify-content: center;
   position: absolute;
   bottom: 33px;
-  margin-left: 44px;
+  margin-left: 39px;
 }
 
 .range__controls {
-  margin: 0 17px;
+  margin: 0 11px;
 }
 
 .range__name {
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
+  text-transform: uppercase;
+  font-family: @font1;
+  background-color: transparent;
+  border: none;
 }
 
-.range__controls .scale {
+.range__controls-scale {
   height: 14px;
   background-color: @white;
   width: 84px;
@@ -25,7 +30,7 @@
   position: relative;
 }
 
-.range__controls .bar {
+.range__controls-bar {
   position: absolute;
   width: 35px;
   height: 6px;
@@ -36,7 +41,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .range {
     background-color: transparent;
     padding-bottom: 36px;
@@ -49,32 +53,32 @@
     border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   }
 
-  .range__controls .scale {
+  .range__controls-scale {
     height: 6px;
     background-color: #dcdcdc;
     width: 428px;
   }
 
-  .range__controls .bar {
+  .range__controls-bar {
     display: none;
   }
 
-  .range__controls .toggle {
+  .range__controls-toggle {
     position: absolute;
     bottom: 34px;
     left: 337px;
     width: 34px;
     height: 34px;
     padding: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 1px 1px 1px 1px #cdcdcd;
     cursor: pointer;
     box-sizing: content-box;
   }
 
-  .range__controls .toggle::after {
-    content: '';
+  .range__controls-toggle::after {
+    content: "";
     position: absolute;
     width: 8px;
     height: 8px;
@@ -84,12 +88,12 @@
     left: 39%;
   }
 
-  .range__controls .toggle:active {
+  .range__controls-toggle:active {
     border: 1px solid @basic_green;
   }
 
   .range__controls {
-    margin: 0 22px;
+    margin: 0 16px;
   }
 
   .range__name:hover {
@@ -97,13 +101,12 @@
   }
 
   .range__name:active {
-    border-bottom: none;
+    border: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-
-  .range__controls .toggle {
+  .range__controls-toggle {
     bottom: -2px;
     left: 374px;
   }

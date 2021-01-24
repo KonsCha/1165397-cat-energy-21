@@ -26,7 +26,17 @@
   padding-right: 33px;
   margin: 0;
   padding-bottom: 23px;
-  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+
+.programms-article__description::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 240px;
+  background-color: #d9d9d9;
+  bottom: 0;
+  left: 20px;
 }
 
 .programms-article__link {
@@ -75,13 +85,13 @@
   height: 10px;
   right: -49px;
   top: 21px;
-  background-image: url(../img/icon_arrow.svg);
+  background-image: url("../img/icon_arrow.svg");
   background-repeat: no-repeat;
-  background-position: -8px 0px;
+  background-position: -8px 0;
 }
 
 .programms-article__link:hover::after {
-  background-position: 0px 0px;
+  background-position: 0 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -101,6 +111,10 @@
     padding-left: 52px;
     border-bottom: none;
     width: 457px;
+  }
+
+  .programms-article__description::after {
+    display: none;
   }
 
   .programms-article__description--cat-pro {
@@ -144,9 +158,8 @@
   .programms-article__link::after {
     right: -57px;
     top: 38px;
-    background-position: -7px 0px;
+    background-position: -7px 0;
   }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -199,4 +212,3 @@
     top: 10px;
   }
 }
-

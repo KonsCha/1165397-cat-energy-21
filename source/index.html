@@ -46,13 +46,15 @@
             </picture>
           </a>
         </div>
-        <nav class="main-nav main-nav--opened">
-          <a class="button-toggle">
+        <!-- Реализация без JS! Меню открыто по умолчанию, кнопка скрыта. Использовать main-nav--closed для переключения состояния меню в закрытое.  -->
+        <nav class="main-nav">
+          <!-- при button-toggle--opened появляется кнопка-крестик, при button-toggle--none кнопка исчезает.  -->
+          <button class="button-toggle button-toggle--none">
             <span class="visually-hidden">Открыть меню</span>
-          </a>
+          </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active main-nav__item--active-cat">
-              <a class="main-nav__link main-nav__link--cat" href="#">
+            <li class="main-nav__item main-nav__item--active-cat">
+              <a class="main-nav__link main-nav__link--cat main-nav__link--active" href="#">
                 Главная
               </a>
             </li>
@@ -153,19 +155,21 @@
                 обычный корм на Cat Energy Slim. Отличный результат
                 без изнуряющих тренировок! При этом он не менял своих
                 привычек и по-прежнему спит по 16 часов в день. </p>
-                <div class="example__information information">
-                  <div class="information__weight">
-                    <p class="information__description information__description--left">5 КГ</p>
-                    <p class="information__description-extra">снижение веса</p>
+                <div class="example__wrapper-inform">
+                  <div class="example__information information">
+                    <div class="information__weight">
+                      <p class="information__description information__description--left">5 КГ</p>
+                      <p class="information__description-extra">снижение веса</p>
+                    </div>
+                    <div class="information__time">
+                      <p class="information__description information__description--right">60 ДНЕЙ</p>
+                      <p class="information__description-extra information__description-extra--right">затрачено времени</p>
+                    </div>
                   </div>
-                  <div class="information__time">
-                    <p class="information__description information__description--right">60 ДНЕЙ</p>
-                    <p class="information__description-extra information__description-extra--right">затрачено времени</p>
+                  <div class="example__cost example-cost">
+                    <p class="example-cost__description">Затраты на питание:</p>
+                    <p class="example-cost__description-price">15 000 РУБ.</p>
                   </div>
-                </div>
-                <div class="example__cost example-cost">
-                  <p class="example-cost__description">Затраты на питание:</p>
-                  <p class="example-cost__description-price">15 000 РУБ.</p>
                 </div>
             </div>
             <div class="example__wrapper-cat">
@@ -183,14 +187,14 @@
                 </picture>
               </div>
               <div class="example__range range">
-                <p class="range__name">было</p>
+                <button class="range__name">было</button>
                 <div class="range__controls">
-                  <div class="scale">
-                    <div class="bar"></div>
+                  <div class="range__controls-scale">
+                    <div class="range__controls-bar"></div>
                   </div>
-                  <div class="toggle"></div>
+                  <div class="range__controls-toggle"></div>
                 </div>
-                <p class="range__name">стало</p>
+                <button class="range__name">стало</button>
               </div>
             </div>
           </div>
@@ -228,19 +232,25 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#"><svg class="social__icon social__icon--vkontakte" width="23" height="16">
-                  <use href="#vk"></use>
-                </svg></a>
+                <a class="social__link social__link--vkontakte" href="#">
+                  <svg class="social__icon social__icon--vkontakte" width="23" height="16">
+                    <use href="#vk"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="#"><svg class="social__icon social__icon--instagram" width="16" height="16">
-                  <use href="#inst"></use>
-                </svg></a>
+                <a class="social__link social__link--instagram" href="#">
+                  <svg class="social__icon social__icon--instagram" width="16" height="16">
+                    <use href="#inst"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="#"><svg class="social__icon social__icon--facebook" width="22" height="22">
-                  <use href="#facebook"></use>
-                </svg></a>
+                <a class="social__link social__link--facebook" href="#">
+                  <svg class="social__icon social__icon--facebook" width="22" height="22">
+                    <use href="#facebook"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>

@@ -4,26 +4,23 @@
   line-height: 24px;
   margin: 0;
   padding-top: 24px;
-  position: relative; // нужен для того чтоб перекрыть полосы
+  position: relative;
   display: inline-block;
   padding-right: 22px;
   padding-bottom: 35px;
   margin-top: 0;
-  background: #ffffff; // белый цвет, нужен для того чтоб перекрыть линии
+  background: #ffffff;
 }
 
 .extra-goods__title::after {
-    content: "";
-    position: absolute;
-    top: 46%;
-    width: 100vw; // чтоб тянулось на всю ширину экрана
-    height: 2px;
-    margin-top: 2px;
-    background: @basic_green;
-    z-index: -1;
-}
-
-.extra-goods__title:after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  width: 100vw;
+  height: 2px;
+  margin-top: 2px;
+  background: @basic_green;
+  z-index: -1;
   left: 20px;
 }
 
@@ -43,7 +40,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .extra-goods__title {
     font-size: 36px;
     line-height: 36px;
@@ -58,21 +54,20 @@
     content: "";
     position: absolute;
     top: 40%;
-    width: 100vw; // чтоб тянулось на всю ширину экрана
+    width: 100vw;
     height: 3px;
     margin-top: 2px;
     background: #68b738;
     z-index: -1;
   }
 
-  .extra-goods__title:after {
-  left: 20px;
+  .extra-goods__title::after {
+    left: 20px;
   }
 
   .extra-goods__title::before {
-  right: 0;
+    right: 0;
   }
-
 
   .extra-goods__item {
     border: 1px solid @special_grey;
@@ -89,7 +84,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .extra-goods__list {
     display: flex;
     flex-direction: column;
@@ -108,7 +102,7 @@
   }
 
   .extra-goods__title {
-    padding-top: 53px;
+    padding-top: 51px;
     padding-bottom: 80px;
     padding-left: 40px;
     padding-right: 36px;

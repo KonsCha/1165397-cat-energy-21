@@ -46,18 +46,20 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-nav--opened">
-        <a class="button-toggle">
+      <!-- Реализация без JS! Меню открыто по умолчанию, кнопка скрыта. Использовать main-nav--closed для переключения состояния меню в закрытое.  -->
+      <nav class="main-nav">
+        <!-- при button-toggle--opened появляется кнопка-крестик, при button-toggle--none кнопка исчезает.  -->
+        <button class="button-toggle button-toggle--none">
           <span class="visually-hidden">Открыть меню</span>
-        </a>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="catalog.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="catalog.html">
               Каталог продукции
             </a>
           </li>
@@ -71,7 +73,7 @@
     </div>
   </header>
   <main class="page-main overflow">
-    <div class="page-main__wrapper container">
+    <div class="page-main__wrapper-catalog container">
       <h1 class="visually-hidden">Каталог "Cat Energy" </h1>
       <section class="product-catalog">
         <h2 class="product-catalog__title">Каталог продукции</h2>
@@ -92,9 +94,10 @@
                     <h3 class="product__title">Cat Energy PRO 500 г</h3>
                   </a>
                   <table class="product__options">
-                    <tbody><tr>
-                      <td>Масса</td>
-                      <td>500 г</td>
+                    <tbody>
+                      <tr>
+                        <td>Масса</td>
+                        <td>500 г</td>
                       </tr>
                       <tr>
                         <td>Вкус</td>
@@ -104,7 +107,8 @@
                         <td>Цена</td>
                         <td>700 Р.</td>
                       </tr>
-                    </tbody></table>
+                    </tbody>
+                  </table>
                 </section>
                 <a class="btn" href="#">Заказать</a>
               </div>
@@ -435,19 +439,25 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#"><svg class="social__icon social__icon--vkontakte" width="23" height="16">
-                <use href="#vk"></use>
-              </svg></a>
+              <a class="social__link social__link--vkontakte" href="#">
+                <svg class="social__icon social__icon--vkontakte" width="23" height="16">
+                  <use href="#vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#"><svg class="social__icon social__icon--instagram" width="16" height="16">
-                <use href="#inst"></use>
-              </svg></a>
+              <a class="social__link social__link--instagram" href="#">
+                <svg class="social__icon social__icon--instagram" width="16" height="16">
+                  <use href="#inst"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><svg class="social__icon social__icon--facebook" width="22" height="22">
-                <use href="#facebook"></use>
-              </svg></a>
+              <a class="social__link social__link--facebook" href="#">
+                <svg class="social__icon social__icon--facebook" width="22" height="22">
+                  <use href="#facebook"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

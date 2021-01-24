@@ -9,17 +9,10 @@
 .product__img {
   width: 50%;
   display: block;
-  padding-left: 36px;
-  padding-top: 25px;
 }
 
 td {
   padding: 0;
-}
-
-.product__img--big {
-  padding-left: 26px;
-  padding-top: 10px;
 }
 
 .product__description {
@@ -27,12 +20,6 @@ td {
 }
 
 .product__description--show-all {
-  width: 100%;
-  padding-top: 57px;
-}
-
-.product__description--show-all {
-
   &::before,
   &::after {
     content: "";
@@ -51,6 +38,8 @@ td {
   &::after {
     transform: rotate(-180deg);
   }
+  width: 100%;
+  padding-top: 57px;
 }
 
 .product__text {
@@ -61,12 +50,6 @@ td {
   font-size: 12px;
   line-height: 16px;
   color: @special_dark-grey;
-}
-
-.product__options {
-  width: 100%;
-  padding: 0;
-  border-collapse: collapse;
 }
 
 .product__options td:last-child {
@@ -102,11 +85,12 @@ td {
   line-height: 16px;
   color: @special_dark-grey;
   margin-bottom: 20px;
-
+  width: 100%;
+  padding: 0;
+  border-collapse: collapse;
 }
 
 @media (min-width: @tablet-width) {
-
   .product__title {
     font-size: 20px;
     line-height: 24px;
@@ -120,10 +104,10 @@ td {
   .product__title--show-all {
     max-width: 183px;
     max-height: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-bottom: -4px;
     margin-right: 53px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 155px;
   }
 
@@ -137,8 +121,7 @@ td {
 
   .product__options td {
     padding: 8px 0;
-}
-
+  }
 
   .product__description {
     width: 247px;
@@ -153,13 +136,12 @@ td {
 
   .product__img {
     position: absolute;
-    top: -102px;
-    left: 44px;
+    top: -46px;
+    left: 80px;
   }
 
   .product__img--big {
-    top: -85px;
-    padding-left: 33px;
+    top: -73px;
   }
 
   .product__text {
@@ -174,22 +156,17 @@ td {
   }
 
   .product__description--show-all {
-
     &::before,
     &::after {
       top: 82px;
       left: 132px;
       width: 60px;
     }
-  }
-
-  .product__description--show-all {
     padding-top: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-
   .product__title {
     line-height: 21px;
     margin-left: 54px;
@@ -202,12 +179,11 @@ td {
     padding-bottom: 0;
     margin-bottom: -8px;
     margin-right: 59px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 160px;
   }
 
   .product__description--show-all {
-
     &::before,
     &::after {
       top: 81px;
@@ -217,12 +193,12 @@ td {
 
   .product__img {
     position: absolute;
-    top: -104px;
-    left: 5px;
+    top: -54px;
+    left: 42px;
   }
 
   .product__img--big {
-    top: -92px;
+    top: -83px;
   }
 
   .product__options {
@@ -237,4 +213,3 @@ td {
     padding-top: 6px;
   }
 }
-

@@ -1,7 +1,12 @@
 .field-text {
-  margin-bottom: 13px;
   display: flex;
   position: relative;
+
+  @media (max-width: @tablet-width - 1) {
+    margin: 0 auto;
+    width: 320px;
+    margin-bottom: 13px;
+  }
 }
 
 .field-text__name {
@@ -18,7 +23,7 @@
   line-height: 18px;
   font-size: 16px;
   color: @special_dark-grey;
-  width: 94%;
+  width: 78%;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 14px;
@@ -37,33 +42,33 @@
 
 .field-text__input:focus:invalid {
   outline: none;
-  border: 2px solid #FF8282;
+  border: 2px solid #ff8282;
 }
 
 .field-text__icon--phone {
   position: absolute;
-  top: 12px;
-  right: 13px;
+  top: 15px;
+  right: 54px;
   fill: @black;
 }
 
 .field-text__icon--email {
   position: absolute;
   top: 18px;
-  right: 15px;
+  right: 55px;
 }
 
 .field-text__input--textarea {
-  width: 100%;
+  width: 280px;
   height: 151px;
-  margin-left: 0;
-  padding-top: 10px;
+  margin-left: 20px;
+  padding-top: 9px;
   vertical-align: top;
 }
 
 .field-text__input--e-mail,
 .field-text__input--phone {
-  width: 96%;
+  width: 80%;
   padding-top: 14px;
   margin-left: 11px;
 }
@@ -73,7 +78,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .field-text {
     margin-bottom: 18px;
   }
@@ -83,6 +87,7 @@
     line-height: 30px;
     padding-top: 11px;
   }
+
   .field-text__input {
     font-size: 20px;
     line-height: 30px;
@@ -104,6 +109,7 @@
     top: 15px;
     right: 16px;
   }
+
   .field-text__icon--email {
     top: 19px;
     right: 17px;
@@ -120,8 +126,8 @@
   }
 
   .field-text__icon--email {
-  top: 18px;
-  right: 22px;
+    top: 18px;
+    right: 22px;
   }
 
   .field-text__icon--phone {
@@ -135,4 +141,3 @@
     margin-bottom: 44px;
   }
 }
-

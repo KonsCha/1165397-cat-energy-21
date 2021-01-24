@@ -1,5 +1,11 @@
 .field-checkbox {
   text-transform: uppercase;
+
+  @media (max-width: @tablet-width - 1) {
+    margin: 0 auto;
+    width: 320px;
+    padding: 0 20px;
+  }
 }
 
 .field-checkbox__item {
@@ -21,8 +27,6 @@
 
 .field-checkbox__input {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -32,15 +36,15 @@
   top: -6px;
   width: 30px;
   height: 30px;
-  background-image: url(../img/checkbox-mobile.svg);
+  background-image: url("../img/checkbox-mobile.svg");
 }
 
-.field-checkbox__input:checked+.field-checkbox__box {
-  background-image: url(../img/checkbox-active-mobile.svg);
+.field-checkbox__input:checked + .field-checkbox__box {
+  background-image: url("../img/checkbox-active-mobile.svg");
 }
 
 .field-checkbox__box:hover {
-  border: 1px solid #BABABA;
+  border: 1px solid #bababa;
   background-image: none;
 }
 
@@ -64,11 +68,11 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url(../img/checkbox-tablet.svg);
+    background-image: url("../img/checkbox-tablet.svg");
   }
 
-  .field-checkbox__input:checked+.field-checkbox__box {
-    background-image: url(../img/checkbox-active-tablet.svg);
+  .field-checkbox__input:checked + .field-checkbox__box {
+    background-image: url("../img/checkbox-active-tablet.svg");
   }
 
   .field-checkbox-option {
@@ -80,6 +84,7 @@
   .field-checkbox__list {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 29px;
   }
 
   .field-checkbox__item {

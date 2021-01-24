@@ -46,10 +46,12 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-nav--opened">
-        <a class="button-toggle">
+      <!-- Реализация без JS! Меню открыто по умолчанию, кнопка скрыта. Использовать main-nav--closed для переключения состояния меню в закрытое.  -->
+      <nav class="main-nav">
+        <!-- при button-toggle--opened появляется кнопка-крестик, при button-toggle--none кнопка исчезает.  -->
+        <button class="button-toggle button-toggle--none">
           <span class="visually-hidden">Открыть меню</span>
-        </a>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">
@@ -61,8 +63,8 @@
               Каталог продукции
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="#">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#">
               Подбор программы
             </a>
           </li>
@@ -100,16 +102,16 @@
           </div>
           <div class="form__radio radio">
             <ul class="radio__list">
-              <li class="radio__item"><label class="radio__option check">
-                  <input class="check__input" type="radio" name="answer" value="losing-weight" checked>
+              <li class="radio__item"><label class="radio__option">
+                  <input class="radio__input" type="radio" name="answer" value="losing-weight" checked>
                   <span class="radio__box"></span>
                   похудение</label></li>
               <li class="radio__item"><label class="radio__option check">
-                  <input class="check__input" type="radio" name="answer" value="gain-weight">
+                  <input class="radio__input" type="radio" name="answer" value="gain-weight">
                   <span class="radio__box"></span>
                   Набор массы</label></li>
               <li class="radio__item"><label class="radio__option check">
-                  <input class="check__input" type="radio" name="answer" value="need-advice">
+                  <input class="radio__input" type="radio" name="answer" value="need-advice">
                   <span class="radio__box"></span>
                   Не знаю (Нужен ваш совет)</label></li>
             </ul>
@@ -204,19 +206,25 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#"><svg class="social__icon social__icon--vkontakte" width="23" height="16">
-                <use href="#vk"></use>
-              </svg></a>
+              <a class="social__link social__link--vkontakte" href="#">
+                <svg class="social__icon social__icon--vkontakte" width="23" height="16">
+                  <use href="#vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#"><svg class="social__icon social__icon--instagram" width="16" height="16">
-                <use href="#inst"></use>
-              </svg></a>
+              <a class="social__link social__link--instagram" href="#">
+                <svg class="social__icon social__icon--instagram" width="16" height="16">
+                  <use href="#inst"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"><svg class="social__icon social__icon--facebook" width="22" height="22">
-                <use href="#facebook"></use>
-              </svg></a>
+              <a class="social__link social__link--facebook" href="#">
+                <svg class="social__icon social__icon--facebook" width="22" height="22">
+                  <use href="#facebook"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

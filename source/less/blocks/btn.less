@@ -17,19 +17,60 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-@media (min-width: @tablet-width) {
+.btn--extra-good {
+  display: inline-block;
+}
 
+.btn--show-all {
+  color: @special_dark-grey;
+  background-color: @basic_grey;
+  padding: 10px 34px;
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.btn--show-all:hover {
+  background-color: #ebebeb;
+}
+
+.btn--show-all:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+@media (min-width: @tablet-width) {
   .btn {
     width: 77%;
     margin-top: 12px;
   }
 
+  .btn--extra-good {
+    padding: 10px 232px;
+    margin-top: 0;
+    width: 90%;
+    margin-left: 35px;
+    margin-right: 38px;
+  }
+
+  .btn--show-all {
+    padding: 10px 79px;
+    width: 78%;
+  }
 }
 
 @media (min-width: @desktop-width) {
-
   .btn {
     width: 68%;
     margin-top: 10px;
+  }
+
+  .btn--extra-good {
+    padding: 10px 91px;
+    width: 30%;
+    margin: 0;
+  }
+
+  .btn--show-all {
+    padding: 10px 39px;
+    width: 70%;
   }
 }

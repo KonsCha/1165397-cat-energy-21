@@ -1,4 +1,9 @@
-.main-nav--closed .button-toggle::before {
+.button-toggle {
+  border: none;
+  padding: 0;
+}
+
+.button-toggle::before {
   content: "";
   position: absolute;
   top: 13px;
@@ -10,8 +15,7 @@
   cursor: pointer;
 }
 
-.main-nav--opened .button-toggle {
-
+.button-toggle--opened {
   &::before,
   &::after {
     content: "";
@@ -21,7 +25,7 @@
     width: 25px;
     height: 1.5px;
     background-color: @black;
-    display: none;
+    box-shadow: none;
   }
 
   &::before {
@@ -33,9 +37,12 @@
   }
 }
 
+.button-toggle--none {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
-  .main-nav--closed .button-toggle::before,
-  .main-nav--opened .button-toggle {
+  .button-toggle {
     display: none;
   }
 }
